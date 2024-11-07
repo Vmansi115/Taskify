@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "todo-app",
+    "name": "taskify",
     "builds": [
       {
         "src": "src/index.ts",
