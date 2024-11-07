@@ -1,0 +1,80 @@
+/* index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Override default Tailwind styles or add custom styles */
+
+body {
+  /* Change background color */
+  background: #08337d ;/* Light gray background */
+  font-family: 'Roboto', sans-serif; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;/* Change the font family */
+}
+.main {
+  background: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+/* Navbar styles */
+.navbar {
+  background-color: #978185; /* Dark gray background for navbar */
+  color: #F54B64; /* White text color */
+  padding: 1rem;
+}
+
+/* Button styles */
+.btn {
+  background-color: #7252c2;
+  /*Bluebuttonbackground*/color: #ffffff;
+  /*Whitetextcolor*/padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #75f4f8; /* cyan on hover */
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #cbd5e0; /* Light gray border */
+}
+
+.table th {
+  background-color: #edf2f7; /* Light blue-gray background for table headers */
+  color: #2d3748; /* Dark gray text color for table headers */
+}
+
+.table td {
+  background-color: #ffffff; /* White background for table cells */
+}
+
+.table tr:hover {
+  background-color: #f7fafc; /* Light blue-gray background on hover */
+}
