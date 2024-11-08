@@ -1,13 +1,5 @@
 {
-    "version": 2,
-    "name": "taskify",
-    "builds": [
-      {
-        "src": "src/index.ts",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
+    "rewrites": [
       {
         "src": "/api/(.*)",
         "dest": "/src/index.ts"
