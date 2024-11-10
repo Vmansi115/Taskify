@@ -2,7 +2,7 @@
   "compilerOptions": {
     "typeRoots": ["./typings", "./node_modules/@types"],
     "target": "ES2017",                     // Ensures modern ES target for compatibility with current Node.js versions
-    "module": "ESNext",                      // Uses ES modules for compatibility
+    "module": "CommonJS",                      // Uses ES modules for compatibility
     "moduleResolution": "node",              // Ensures Node.js-style module resolution
     "outDir": "./dist",                      // Compiled output directory
     "rootDir": "./src",                      // Source files directory
