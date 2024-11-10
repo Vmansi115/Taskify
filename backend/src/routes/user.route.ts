@@ -1,7 +1,9 @@
-import express from 'express';
-import { isAuthenticatedUser } from '../middleware/auth.middleware';
-//import { verifyOtp } from '../middleware/otp.middleware';
-import { signUpUser, loginUser, logoutUser, currentUser, getUserActivities } from '../controller/user.controller';
+const express = require('express');
+const { isAuthenticatedUser } = require('../middleware/auth.middleware');
+// const { verifyOtp } = require('../middleware/otp.middleware');
+const { signUpUser, loginUser, logoutUser, currentUser, getUserActivities } = require('../controller/user.controller');
+
+// Your other code here
 
 const userRouter = express.Router();
 
