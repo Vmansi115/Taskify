@@ -1,23 +1,22 @@
 {
   "compilerOptions": {
     "typeRoots": ["./typings", "./node_modules/@types"],
-    "target": "ES2017", // Ensure modern ES target for compatibility with current Node.js versions
-    "module": "ESNext", // Use ES modules for compatibility
-    "moduleResolution": "node", // Ensure Node.js-style module resolution
-    "outDir": "./dist", // Compiled output directory
-    "rootDir": "./src", // Source files directory
-    "esModuleInterop": true, // Ensure interoperability between CommonJS and ES modules
-    "forceConsistentCasingInFileNames": true, // Enforce case sensitivity in imports
-    "strict": true, // Enable strict type checking
-    "skipLibCheck": true, // Skip type checking of declaration files for faster builds
-    "resolveJsonModule": true, // Enable importing JSON files
-    "allowSyntheticDefaultImports": true, // Allow default imports from modules without default exports
-    "declaration": true, // Generate type declaration files
-    "noEmit":false, // Output both JS and type declaration fil
+    "target": "ES2017",                     // Ensures modern ES target for compatibility with current Node.js versions
+    "module": "ESNext",                      // Uses ES modules for compatibility
+    "moduleResolution": "node",              // Ensures Node.js-style module resolution
+    "outDir": "./dist",                      // Compiled output directory
+    "rootDir": "./src",                      // Source files directory
+    "esModuleInterop": true,                 // Ensures interoperability between CommonJS and ES modules
+    "forceConsistentCasingInFileNames": true, // Enforces case sensitivity in imports
+    "strict": true,                          // Enables strict type checking
+    "skipLibCheck": true,                    // Skips type checking of declaration files for faster builds
+    "resolveJsonModule": true,               // Enables importing JSON files
+    "allowSyntheticDefaultImports": true,    // Allows default imports from modules without default exports
+    "declaration": true,                     // Generates type declaration files
+    "noEmit": false,                         // Outputs both JS and type declaration files
     "types": ["node"],
     "lib": ["es6", "dom"]
   },
-  "include": ["src"], // Include source directory
-  "exclude": ["node_modules"] // Exclude unnecessary directories
+  "include": ["src"],                         // Includes source directory
+  "exclude": ["node_modules"]                 // Excludes unnecessary directories
 }
-
