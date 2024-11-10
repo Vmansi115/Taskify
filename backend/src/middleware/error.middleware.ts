@@ -1,4 +1,5 @@
-import { Request, Response, NextFunction } from 'express';
+const { Request, Response, NextFunction } = require('express');
+
 
 const error = (err: any, req: Request, res: Response, next: NextFunction) => {
     err.statusCode = err.statusCode || 500;
