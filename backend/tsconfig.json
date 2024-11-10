@@ -5,6 +5,7 @@
     "module": "commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
+    "noImplicitAny": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -17,3 +18,5 @@
   },
   "include": ["src"]
 }
+
+
