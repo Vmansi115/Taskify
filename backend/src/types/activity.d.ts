@@ -1,4 +1,4 @@
-import mongoose from "mongoose"; 
+const mongoose = require("mongoose");
 
 export type TActivity = {
     _id: string,
