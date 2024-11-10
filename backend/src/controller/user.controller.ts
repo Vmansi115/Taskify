@@ -1,10 +1,11 @@
-import catchAsyncError from "../lib/asyncHandler";
-import ErrorHandler from "../lib/errorHandler";
-import User from "../model/user.model";
-import { sendApiResponse } from "../lib/generateToken";
-import Activity from "../model/activity.model";
-import bcrypt from 'bcryptjs';
-import { otpGenerator, sendOTP } from "../lib/OTP";
+const catchAsyncError = require("../lib/asyncHandler");
+const ErrorHandler = require("../lib/errorHandler");
+const User = require("../model/user.model");
+const { sendApiResponse } = require("../lib/generateToken");
+const Activity = require("../model/activity.model");
+const bcrypt = require('bcryptjs');
+const { otpGenerator, sendOTP } = require("../lib/OTP");
+
 
 export const signUpUser = catchAsyncError(async (req, res, next) => {
     const { name, email, password } = req.body;
