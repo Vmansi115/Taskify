@@ -1,8 +1,6 @@
-
-
-import { Session } from 'express-session';
-import { User } from './types';
-import{otp} from './types' // Import your User type definition
+const { Session } = require('express-session');
+const { User } = require('./types');
+const { otp } = require('./types');
 
 declare module 'express' {
     interface Request {
