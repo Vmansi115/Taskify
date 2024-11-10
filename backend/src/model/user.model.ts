@@ -1,10 +1,13 @@
-import mongoose, { Schema, Document } from 'mongoose';
-import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
-import validator from 'validator';
-import dotenv from 'dotenv';
-import { TUser } from '../types/user';
-import Activity from './activity.model';
+const mongoose = require('mongoose');
+const { Schema, Document } = require('mongoose');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const validator = require('validator');
+const dotenv = require('dotenv');
+const { TUser } = require('../types/user');
+const Activity = require('./activity.model');
+
+// Your other code here
 
 dotenv.config();
 
