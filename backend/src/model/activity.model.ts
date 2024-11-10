@@ -1,5 +1,8 @@
-import mongoose, { Schema } from 'mongoose';
-import { TActivity } from '../types/activity';
+const mongoose = require('mongoose');
+const { Schema } = require('mongoose');
+const { TActivity } = require('../types/activity');
+
+// Your other code here
 
 const activitySchema = new Schema<TActivity>({
     name: {
