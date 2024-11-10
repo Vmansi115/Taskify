@@ -1,5 +1,7 @@
-import { Request } from 'express';
-import nodemailer from "nodemailer";
+const { Request } = require('express');
+const nodemailer = require("nodemailer");
+
+// Your other code here
 
 // In-memory store for OTPs (replace with your database or caching solution in production)
 const otpStore: { [email: string]: string } = {};
