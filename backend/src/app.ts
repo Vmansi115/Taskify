@@ -1,12 +1,10 @@
-import cookieParser from 'cookie-parser';
-import cors from 'cors';
-import express from 'express';
-import morgan from 'morgan';
-import userRouter from './routes/user.route';
-import activityRouter from './routes/activity.route';
-import error from './middleware/error.middleware';
-
-
+const cookieParser = require('cookie-parser');
+const cors = require('cors');
+const express = require('express');
+const morgan = require('morgan');
+const userRouter = require('./routes/user.route');
+const activityRouter = require('./routes/activity.route');
+const error = require('./middleware/error.middleware');
 
 const app= express();
 
