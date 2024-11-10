@@ -1,6 +1,6 @@
 import express from 'express';
-import { isAuthenticatedUser } from '../middleware/auth.middleware.ts';
-import { createActivity, getActivity, changeStatus, deleteActivity } from '../controller/activity.controller.ts';
+import { isAuthenticatedUser } from '../middleware/auth.middleware';
+import { createActivity, getActivity, changeStatus, deleteActivity } from '../controller/activity.controller';
 
 const activityRouter = express.Router();
 
