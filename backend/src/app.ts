@@ -2,9 +2,9 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import express from 'express';
 import morgan from 'morgan';
-import userRouter from './routes/user.route.ts';
-import activityRouter from './routes/activity.route.ts';
-import error from './middleware/error.middleware.ts';
+import userRouter from './routes/user.route';
+import activityRouter from './routes/activity.route';
+import error from './middleware/error.middleware';
 
 
 
