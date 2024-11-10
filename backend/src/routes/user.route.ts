@@ -1,7 +1,7 @@
 import express from 'express';
-import { isAuthenticatedUser } from '../middleware/auth.middleware.ts';
-//import { verifyOtp } from '../middleware/otp.middleware.ts';
-import { signUpUser, loginUser, logoutUser, currentUser, getUserActivities } from '../controller/user.controller.ts';
+import { isAuthenticatedUser } from '../middleware/auth.middleware';
+//import { verifyOtp } from '../middleware/otp.middleware';
+import { signUpUser, loginUser, logoutUser, currentUser, getUserActivities } from '../controller/user.controller';
 
 const userRouter = express.Router();
 
