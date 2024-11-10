@@ -1,7 +1,6 @@
-import catchAsyncError from "../lib/asyncHandler";
-import ErrorHandler from "../lib/errorHandler";
-import Activity from "../model/activity.model";
-
+const catchAsyncError = require("../lib/asyncHandler");
+const ErrorHandler = require("../lib/errorHandler");
+const Activity = require("../model/activity.model");
 
 
 export const createActivity = catchAsyncError(async (req, res, next) => {
