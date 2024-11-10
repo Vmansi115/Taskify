@@ -1,6 +1,6 @@
-import express from 'express';
-import { isAuthenticatedUser } from '../middleware/auth.middleware';
-import { createActivity, getActivity, changeStatus, deleteActivity } from '../controller/activity.controller';
+const express = require('express');
+const { isAuthenticatedUser } = require('../middleware/auth.middleware');
+const { createActivity, getActivity, changeStatus, deleteActivity } = require('../controller/activity.controller');
 
 const activityRouter = express.Router();
 
