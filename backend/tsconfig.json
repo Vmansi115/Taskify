@@ -19,6 +19,6 @@
     "allowImportingTsExtensions": true
   },
   "include": ["src"], // Include source directory
-  "exclude": ["node_modules", "dist"] // Exclude unnecessary directories
+  "exclude": ["node_modules"] // Exclude unnecessary directories
 }
 
