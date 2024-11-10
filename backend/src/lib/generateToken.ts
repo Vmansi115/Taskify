@@ -1,6 +1,6 @@
-import { Response } from "express";
-import { TUser } from "../types/user";
-import dotenv from "dotenv";
+const { Response } = require("express");
+const { TUser } = require("../types/user");
+const dotenv = require("dotenv");
 
 dotenv.config();
 
