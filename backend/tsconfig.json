@@ -15,8 +15,7 @@
     "declaration": true, // Generate type declaration files
     "noEmit":false, // Output both JS and type declaration fil
     "types": ["node"],
-    "lib": ["es6", "dom"],
-    "allowImportingTsExtensions": true
+    "lib": ["es6", "dom"]
   },
   "include": ["src"], // Include source directory
   "exclude": ["node_modules"] // Exclude unnecessary directories
