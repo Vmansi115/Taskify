@@ -8,7 +8,7 @@ import { TUser } from '../types/user';
 
 dotenv.config();
 
-interface CustomJwtPayload extends JwtPayload {
+interface CustomJwtPayload extends Record<string,any> {
     id: string;
     accessToken: string;
 }
