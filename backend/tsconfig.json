@@ -16,7 +16,8 @@
     "allowImportingTsExtensions": true,
     "noEmit": true // Or use "emitDeclarationOnly": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude":["node_modules"]
 }
 
 
