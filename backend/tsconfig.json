@@ -17,9 +17,6 @@
     "types": ["node"],
     "lib": ["es6", "dom"],
     "allowImportingTsExtensions": true
-
-}
-
   },
   "include": ["src"], // Include source directory
   "exclude": ["node_modules", "dist"] // Exclude unnecessary directories
