@@ -1,9 +1,9 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 import dotenv from 'dotenv';
-import User from '../model/user.model.ts';
-import ErrorHandler from '../lib/errorHandler.ts';
-import asyncHandler from '../lib/asyncHandler.ts';
+import User from '../model/user.model';
+import ErrorHandler from '../lib/errorHandler';
+import asyncHandler from '../lib/asyncHandler';
 import { TUser } from '../types/user';
 
 dotenv.config();
