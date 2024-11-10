@@ -13,7 +13,11 @@
     "resolveJsonModule": true, // Enable importing JSON files
     "allowSyntheticDefaultImports": true, // Allow default imports from modules without default exports
     "declaration": true, // Generate type declaration files
-    "emitDeclarationOnly": false // Output both JS and type declaration files
+    "emitDeclarationOnly": false, // Output both JS and type declaration fil
+    "allowImportingTsExtensions": true
+
+}
+
   },
   "include": ["src"], // Include source directory
   "exclude": ["node_modules", "dist"] // Exclude unnecessary directories
