@@ -1,10 +1,13 @@
-import { Request, Response, NextFunction } from 'express';
-import jwt, { JwtPayload } from 'jsonwebtoken';
-import dotenv from 'dotenv';
-import User from '../model/user.model';
-import ErrorHandler from '../lib/errorHandler';
-import asyncHandler from '../lib/asyncHandler';
-import { TUser } from '../types/user';
+const { Request, Response, NextFunction } = require('express');
+const jwt = require('jsonwebtoken');
+const { JwtPayload } = require('jsonwebtoken');
+const dotenv = require('dotenv');
+const User = require('../model/user.model');
+const ErrorHandler = require('../lib/errorHandler');
+const asyncHandler = require('../lib/asyncHandler');
+const { TUser } = require('../types/user');
+
+// Your other code here
 
 dotenv.config();
 
