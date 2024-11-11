@@ -5,9 +5,11 @@ const { sendApiResponse } = require("../lib/generateToken");
 const Activity = require("../model/activity.model");
 const bcrypt = require('bcryptjs');
 const { otpGenerator, sendOTP } = require("../lib/OTP");
+const { Request, Response, NextFunction } = require('express');
 
 
-export const signUpUser = catchAsyncError(async (req, res, next) => {
+
+export const signUpUser = catchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
     const { name, email, password } = req.body;
 
     if (!name || !email || !password) {
@@ -59,7 +61,7 @@ export const signUpUser = catchAsyncError(async (req, res, next) => {
 //     sendApiResponse(user, 200, res);
 // });
 
-export const loginUser = catchAsyncError(async (req, res, next) => {
+export const loginUser = catchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
     const { email, password } = req.body;
 
     if (!email || !password) {
@@ -79,7 +81,7 @@ export const loginUser = catchAsyncError(async (req, res, next) => {
     sendApiResponse(user, 200, res);
 })
 
-export const logoutUser = catchAsyncError(async (req, res, next) => {
+export const logoutUser = catchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
 
     res.cookie("token", null, {
         expires: new Date(Date.now()),
@@ -90,7 +92,7 @@ export const logoutUser = catchAsyncError(async (req, res, next) => {
     });
 })
 
-export const currentUser = catchAsyncError(async (req, res, next) => {
+export const currentUser = catchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
 
     if (!req.user) {
         return next(new ErrorHandler("User not found", 401))
@@ -103,7 +105,7 @@ export const currentUser = catchAsyncError(async (req, res, next) => {
     })
 })
 
-export const getUserActivities = catchAsyncError(async (req, res, next) => {
+export const getUserActivities = catchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
 
     if (!req.user) {
         return next(new ErrorHandler("You are not Authenticated ", 401));
