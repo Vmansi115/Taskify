@@ -1,9 +1,9 @@
 const catchAsyncError = require("../lib/asyncHandler");
 const ErrorHandler = require("../lib/errorHandler");
 const Activity = require("../model/activity.model");
+const { Request, Response, NextFunction } = require('express');
 
-
-export const createActivity = catchAsyncError(async (req, res, next) => {
+export const createActivity = catchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
     if (!req.user) {
         return next(new ErrorHandler("Authentication failed. Please log in.", 401));
     }
@@ -26,7 +26,7 @@ export const createActivity = catchAsyncError(async (req, res, next) => {
     });
 });
 
-export const changeStatus = catchAsyncError(async (req, res, next) => {
+export const changeStatus = catchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
     if (!req.user) {
         return next(new ErrorHandler("Authentication failed. Please log in.", 401));
     }
@@ -72,7 +72,7 @@ export const changeStatus = catchAsyncError(async (req, res, next) => {
     });
 });
 
-export const getActivity = catchAsyncError(async (req, res, next) => {
+export const getActivity = catchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
     if (!req.user) {
         return next(new ErrorHandler("Authentication failed. Please log in.", 401));
     }
@@ -90,7 +90,7 @@ export const getActivity = catchAsyncError(async (req, res, next) => {
     });
 });
 
-export const deleteActivity = catchAsyncError(async (req, res, next) => {
+export const deleteActivity = catchAsyncError(async (req: Request, res: Response, next: NextFunction) => {
     if (!req.user) {
         return next(new ErrorHandler("Authentication failed. Please log in.", 401));
     }
